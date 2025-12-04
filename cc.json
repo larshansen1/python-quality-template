@@ -1,0 +1,1 @@
+{"app/example.py": [{"type": "function", "rank": "A", "lineno": 6, "complexity": 3, "name": "complex_function", "col_offset": 0, "endline": 14, "closures": []}, {"type": "function", "rank": "A", "lineno": 1, "complexity": 1, "name": "add", "col_offset": 0, "endline": 3, "closures": []}]}
