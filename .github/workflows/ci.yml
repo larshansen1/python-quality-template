@@ -19,16 +19,16 @@ jobs:
           pip install pytest coverage mypy ruff radon bandit
 
       - name: Lint (ruff)
-        run: ruff check .
+        run: make lint
 
       - name: Typecheck (mypy)
-        run: mypy .
+        run: make typecheck
 
       - name: Complexity (radon)
-        run: ./scripts/run_radon.sh
+        run: make radon
 
       - name: Unit tests
-        run: pytest --maxfail=1 --disable-warnings -v
+        run: make test
 
       - name: Coverage enforcement
-        run: coverage run -m pytest && coverage report --fail-under=85
+        run: make coverage
